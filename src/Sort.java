@@ -34,6 +34,18 @@ public class Sort {
         }
     }
 
+    public void insertionSort(int[] array){
+        int size = array.length;
+        for (int out = 1; out < size; out++) {
+            int tmp = array[out];
+            int in = out;
+            for (; in > 0 && array[in - 1] >= tmp ; in--) {
+                    array[in] = array[in -1];
+            }
+            array[in] = tmp;
+        }
+    }
+
     private void swap(int[] array, int one, int two){
         int tmp = array[one];
         array[one] = array[two];

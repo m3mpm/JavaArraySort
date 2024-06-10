@@ -9,7 +9,7 @@ public class Main {
         sort.fillArray(array,min,max);
         sort.printArray(array);
 
-        sort.selectionSort(array);
+        sort.insertionSort(array);
         sort.printArray(array);
     }
 }
