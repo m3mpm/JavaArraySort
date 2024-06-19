@@ -2,12 +2,6 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Sort {
 
-    public void fillArray(int[] array, int min, int max){
-        int size = array.length;
-        for (int i = 0; i < size; i++) {
-            array[i] = ThreadLocalRandom.current().nextInt(min,max);
-        }
-    }
 
     public void bubbleSort(int[] array){
         int size = array.length;
@@ -52,10 +46,5 @@ public class Sort {
         array[two] = tmp;
     }
 
-    public void printArray(int[] array){
-        for(int num: array){
-            System.out.print(num + " ");
-        }
-        System.out.println("");
-    }
+
 }
