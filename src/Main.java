@@ -5,11 +5,12 @@ public class Main {
         int max = 100;
 
         Sort sort = new Sort();
+        Service service = new Service();
 
-        sort.fillArray(array,min,max);
-        sort.printArray(array);
+        service.fillArray(array,min,max);
+        service.printArray(array);
 
         sort.insertionSort(array);
-        sort.printArray(array);
+        service.printArray(array);
     }
 }
